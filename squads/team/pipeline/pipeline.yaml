@@ -1,0 +1,33 @@
+pipeline:
+  name: Time Criativo — Ideia → Conteúdo Publicável
+  description: >
+    Pipeline completa de produção criativa. Aceita uma ideia bruta como entrada
+    e entrega uma peça publicável (KV, carrossel, post, e-mail, anúncio etc.) com
+    distribuição e multiplicação em outros formatos. Cada agente pode ser
+    invocado standalone também (ver agents/*.agent.md).
+
+steps:
+  - step-00-brief.md
+  - step-01-planner.md
+  - step-02-scout.md
+  - step-02b-checkpoint-pesquisa.md
+  - step-03-creative-director.md
+  - step-04-checkpoint-conceito.md
+  - step-05-scriptwriter.md
+  - step-06-checkpoint-roteiro.md
+  - step-07-art-director.md
+  - step-08-storyboarder.md
+  - step-09-checkpoint-storyboard.md
+  - step-10-producer.md
+  - step-11-editor.md
+  - step-12-checkpoint-final.md
+  - step-13-social-manager.md
+  - step-14-content-multiplier.md
+
+checkpoints:
+  - step-00-brief.md
+  - step-02b-checkpoint-pesquisa.md
+  - step-04-checkpoint-conceito.md
+  - step-06-checkpoint-roteiro.md
+  - step-09-checkpoint-storyboard.md
+  - step-12-checkpoint-final.md

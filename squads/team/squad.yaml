@@ -1,0 +1,52 @@
+squad:
+  code: team
+  name: Time Criativo
+  description: >
+    Squad de 10 agentes criativos especializados que transformam uma ideia bruta
+    em conteúdo publicável. Funciona em pipeline (ideia → publicação) ou cada
+    agente pode ser invocado individualmente para tarefas pontuais.
+  icon: 🎬
+  language: pt-BR
+  type: content
+
+skills:
+  - web_search
+  - web_fetch
+  - canva
+  - image-creator
+  - image-fetcher
+  - image-ai-generator
+  - template-designer
+  - instagram-publisher
+  - blotato
+
+data:
+  - pipeline/data/research-brief.md
+  - pipeline/data/domain-framework.md
+  - pipeline/data/campaign-delivery-system.md
+  - pipeline/data/image-prompt-system.md
+  - pipeline/data/gpt-image-kv-system.md
+  - pipeline/data/headline-intelligence-system.md
+  - pipeline/data/quality-criteria.md
+  - pipeline/data/output-examples.md
+  - pipeline/data/anti-patterns.md
+  - pipeline/data/tone-of-voice.md
+  - pipeline/data/expertise/index.md
+  - pipeline/data/expertise/briefer.md
+  - pipeline/data/expertise/planner.md
+  - pipeline/data/expertise/scout.md
+  - pipeline/data/expertise/creative-director.md
+  - pipeline/data/expertise/scriptwriter.md
+  - pipeline/data/expertise/art-director.md
+  - pipeline/data/expertise/storyboarder.md
+  - pipeline/data/expertise/producer.md
+  - pipeline/data/expertise/editor.md
+  - pipeline/data/expertise/social-manager.md
+  - pipeline/data/expertise/content-multiplier.md
+
+memory:
+  - _memory/memories.md
+  - _memory/runs.md
+
+pipeline:
+  entrypoint: pipeline/pipeline.yaml

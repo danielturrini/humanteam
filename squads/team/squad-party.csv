@@ -1,0 +1,11 @@
+id,name,title,role,path,execution
+planejamento,Planejamento,Planner,Planeja o calendário editorial e traduz briefing em plano executável,./agents/planejamento.agent.md,inline
+sondagem,Sondagem,Scout,Pesquisa tendências audiência e referências do mercado,./agents/sondagem.agent.md,subagent
+conceito,Conceito,Creative Director,Define a big idea o conceito e o ângulo criativo,./agents/conceito.agent.md,inline
+roteiro,Roteiro,Scriptwriter,Escreve roteiros e copys persuasivos a partir do conceito,./agents/roteiro.agent.md,inline
+arte,Arte,Art Director,Define direção visual paleta tipografia e mood,./agents/arte.agent.md,inline
+storyboard,Storyboard,Storyboarder,Quebra o roteiro em quadros visuais com composição e enquadramento,./agents/storyboard.agent.md,inline
+operacao,Operação,Producer,Orquestra recursos prazos assets e logística da produção,./agents/operacao.agent.md,inline
+edicao,Edição,Editor,Monta o material final com ritmo cortes e refinamento,./agents/edicao.agent.md,inline
+midia,Mídia,Social Manager,Publica conteúdo em plataformas e gerencia distribuição,./agents/midia.agent.md,inline
+transformacao,Transformação,Content Multiplier,Reaproveita uma peça em N formatos para diferentes canais,./agents/transformacao.agent.md,inline
