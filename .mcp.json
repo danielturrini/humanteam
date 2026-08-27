@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--config", "_opensquad/config/playwright.config.json"]
+    },
+    "magnific": {
+      "type": "http",
+      "url": "https://mcp.magnific.com/mcp"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+node_modules/
+.env
+*.log
+.DS_Store
+dist/
+*.tsbuildinfo
+
+# Campanhas do usuario (o README fica)
+Campanhas/*
+!Campanhas/README.md
+squads/*/output/
+squads/*/state.json
+
+# Sessao de navegador e logs locais
+_opensquad/_browser_profile/
+_opensquad/logs/
