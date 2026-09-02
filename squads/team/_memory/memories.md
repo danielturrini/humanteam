@@ -31,7 +31,49 @@ aqui o que aprender sobre o seu negocio, seu tom e suas preferencias.
 - Sem produto em fundo branco vazio.
 - Sem nomear concorrente diretamente.
 
+## Unimed Juiz de Fora (marca)
+- Cor primaria oficial: Pantone 348C / HEX `#00995d`. Tipografia: Unimed Sans
+  (peso SemiBold no logotipo). Logo tem 16 variacoes oficiais (com/sem
+  simbolo, com/sem box, institucional/1/2/3 linhas) — nunca redesenhar o
+  simbolo do pinheiro.
+- Sistema nacional Unimed do Brasil "Diretrizes para Comunicar" (MS.024):
+  a marca NAO cria logotipos/submarcas para programas, planos, servicos ou
+  recursos proprios — comunica sempre por texto tipografico fixo (ex.:
+  "PROGRAMA Unimed Vida", "HOSPITAL UNIMED — Referencia em cardiologia").
+  Util para qualquer novo projeto Unimed que envolva nomear um servico.
+- Essencia de marca nacional: proposito "Aqui tem Unimed" (promover saude e
+  qualidade de vida via cooperativismo medico e conhecimento em saude).
+  Conceito geral de criacao: "Presenca que transforma o cuidado com a saude
+  e a vida." 4 diretrizes de conteudo: visao sistemica, humano de verdade,
+  compartilhar conhecimento, da complexidade a simplicidade.
+- Regra de tom em comunicacao de saude: NUNCA abrir peca com sintoma, dor ou
+  urgencia ("Cansado de...", "Sofre com..."). Abrir sempre com
+  reconhecimento/descoberta. Vale para qualquer cliente do setor de saude,
+  nao so Unimed — comunicar acesso e acolhimento, nao ameaca.
+
+## Producao sem motor de imagem por IA
+- Quando Higgsfield CLI e Magnific nao estao disponiveis (nao instalado /
+  requer OAuth que nao roda em sessao nao-interativa), NAO bloquear a
+  campanha inteira. Fallback valido: peças editoriais via HTML/CSS
+  renderizado em PNG no tamanho exato de cada formato, usando o Chromium
+  local (`/opt/pw-browsers/chromium`) via Playwright — sem depender de
+  geracao por IA. Marcar sempre como `PREVIEW / MATERIAL DE APROVACAO` e
+  status `AJUSTAR` ate os elementos reais (logo, cor oficial, URL) chegarem.
+- Esse fallback funciona bem para pecas texto+icone+paleta (sem fotografia).
+  Para campanhas que dependem de fotografia real, o fallback nao substitui
+  o KV — nesse caso o bloqueio por falta de motor/logo e real.
+- Script reutilizavel: `scripts/render-mockups.js` (peca unica) e
+  `scripts/generate-linhas-cuidado.js` (padrao data-driven para multiplicar
+  1 sistema validado em N variacoes — trocar so os dados, nunca o layout).
+
 ## Tecnico
+- `scripts/render-project-document.js` pode falhar com "Executable doesn't
+  exist" se o playwright do `npm install` esperar uma revisao de Chromium
+  mais nova que a pre-instalada em `/opt/pw-browsers/`. Corrigido no script
+  para usar `executablePath: '/opt/pw-browsers/chromium'` quando o arquivo
+  existir, sem precisar baixar nada. Se o erro voltar a aparecer, checar
+  primeiro se essa seção do script ainda esta intacta antes de tentar
+  `npx playwright install` (que normalmente nao tem rede liberada).
 - KV, anuncio com lettering e peca principal com texto aplicado: usar Higgsfield CLI + `gpt_image_2`, sempre enviando referencia de KV com imagem + lettering por `--image` quando houver KV final.
 - Imagem solta sem lettering, textura, fundo e asset secundario: usar Higgsfield CLI + Nano Banana 2 (`nano_banana_2`).
 - Prompts de KV seguem `pipeline/data/gpt-image-kv-system.md`; prompts de imagem solta seguem o formato Human Image: CAMERA / LENS / LIGHT / SUBJECT / FOREGROUND / MIDGROUND / BACKGROUND / WARDROBE TONAL BEHAVIOR / MAKEUP SURFACE PHYSICS / POST BEHAVIOR / COMPOSITIONAL GEOMETRY / MOOD & ART DIRECTION.
