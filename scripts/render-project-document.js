@@ -622,7 +622,12 @@ function buildHtml(markdown) {
   fs.writeFileSync(outCampaignMd, campaignMarkdown, 'utf8');
   fs.writeFileSync(outCampaignHtml, campaignHtml, 'utf8');
 
-  const browser = await chromium.launch({ headless: true });
+  const localChromiumPath = '/opt/pw-browsers/chromium';
+  const launchOptions = { headless: true };
+  if (!process.env.PLAYWRIGHT_SKIP_LOCAL_CHROMIUM && fs.existsSync(localChromiumPath)) {
+    launchOptions.executablePath = localChromiumPath;
+  }
+  const browser = await chromium.launch(launchOptions);
   const page = await browser.newPage();
   await page.goto(`file://${outHtml}`, { waitUntil: 'networkidle' });
   await page.pdf({
