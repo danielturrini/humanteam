@@ -47,6 +47,71 @@ Linhas de Cuidado do Espaco Viver Bem (EVB):
   clinico, excesso de linguagem tecnica/clinica ou generalizacoes alarmistas. Nao comunicar
   doenca como ameaca — comunicar acesso, acolhimento, prevencao, acompanhamento e qualidade de vida.
 
+## Essência e Linguagem da Marca (Manual de Linguagem — MS.138 v1)
+
+- **Propósito (nacional):** "Aqui tem Unimed" — promover saúde e qualidade de
+  vida nas cidades onde atua, por meio do cooperativismo médico e do
+  conhecimento em saúde, para que o maior número de pessoas viva mais e melhor.
+- **Princípios:** atratividade para médicos, pessoas, sustentabilidade,
+  conhecimento, visão sistêmica, inovação, agilidade.
+- **Valores:** integridade, respeito, solidariedade, espírito cooperativista.
+- **Conceito geral de criação:** "Presença que transforma o cuidado com a
+  saúde e a vida." Toda comunicação de campanha deve poder se conectar a essa
+  plataforma nacional, não apenas ao conceito local da peça.
+- **4 diretrizes de conteúdo e comportamento** (aplicar sempre que possível):
+  1. **Visão sistêmica** — mostrar que a Unimed é maior que a soma das partes;
+     sistemas de identidade visual/verbal consistentes.
+  2. **Humano de verdade** — tom de voz empático, comunicação não-violenta,
+     histórias reais de pacientes/equipe, fotografia que valoriza expressões
+     genuínas (não pose forçada).
+  3. **Compartilhar conhecimento** — usar fatos e dados, linguagem didática,
+     FAQs, infográficos.
+  4. **Da complexidade à simplicidade** — organizar com tags/categorias claras,
+     listas, FAQs; design como ferramenta de simplificação, não de estética
+     vazia.
+- **Direção fotográfica (quando houver fotografia real, não ilustração):**
+  câmera na altura dos olhos, luz suave e equilibrada (nunca dura/fria/estourada),
+  expressão espontânea (nunca pose forçada), fundo na paleta de apoio (não
+  recortado/artificial), close com foco crítico quando for "cuidado em ação"
+  (mão, toque, curativo). Evitar: luz fria, poses ensaiadas, ambientes
+  "perfeitos demais" sem calor humano.
+- Fonte: `refs/marca/Manual_Linguagem_Marca.pdf` (documento de ~178 páginas;
+  extração cobriu conceito, propósito, diretrizes de conteúdo e direção
+  fotográfica — as páginas de paleta de cores de apoio e tipografia completa
+  [p. 95–118] não foram recuperáveis por tamanho do arquivo; usar o manual
+  MS.139, já lido na íntegra, como fonte de cor/tipografia oficial).
+
+## Sistema de Nomenclatura (Diretrizes para Comunicar — MS.024 v2)
+
+Regra da marca: **não criar logotipos/submarcas** para programas, planos,
+serviços ou recursos próprios — comunicar sempre por meio de texto (letras),
+com estrutura tipográfica fixa, para não fragmentar a força da marca Unimed.
+
+- **Programa** → estrutura obrigatória: "PROGRAMA" (Unimed Sans Bold, caixa
+  alta) + Nome do Programa (Unimed Slab Bold, 2x o tamanho). Ex.: "PROGRAMA
+  Unimed Vida".
+- **Plano** → mesma lógica com a palavra "PLANO".
+- **Serviço** → nome do serviço (Unimed Sans Bold) + frase de apoio opcional
+  (Unimed Slab Bold). Ex.: "UNIMED FONE — Orientação médica a qualquer hora".
+- **Recurso Próprio** (unidade física própria: hospital, laboratório, centro
+  de diagnóstico) → categoria + frase de apoio opcional. Ex.: "HOSPITAL UNIMED
+  — Referência em cardiologia".
+- Limites de caracteres existem por orientação (vertical: até 20 c. na parte
+  superior / 15 c. no nome; horizontal: até 30 c. / 21 c.) — aplicar como
+  referência, não trava rígida, quando o layout permitir.
+- Cores do texto podem variar desde que sigam a paleta oficial Unimed.
+- **Aplicação ao Espaço Viver Bem:** o EVB se encaixa como **Recurso Próprio**
+  (unidade própria com equipe multidisciplinar, como Hospital Unimed/
+  Laboratório Unimed). As 12 Linhas de Cuidado se encaixam como **Programas**
+  dentro do EVB — sugestão de nomenclatura tipográfica: "PROGRAMA Escola de
+  Coluna e Dor Crônica", etc. Isso deve ser proposto ao Conceito/Arte como
+  direção, não presumido como decisão fechada — o conteúdo oficial recebido do
+  usuário já usa "Linha de Cuidado" como termo consolidado, então a escolha
+  final é: manter "Linha de Cuidado" (termo já em uso) ou migrar para o
+  sistema formal "Programa" da Unimed do Brasil. Fica como ponto de alinhamento
+  na Etapa de Conceito.
+- Fonte: `refs/marca/Diretrizes_Comunicar_Programas_Servicos.pdf`.
+
 ## Identidade Visual (Manual de Marca oficial — MS.139 v1)
 
 - **Logotipo:** wordmark "Unimed" + símbolo do pinheiro/seta, cantos arredondados,
