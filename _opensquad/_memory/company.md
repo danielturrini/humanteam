@@ -47,6 +47,35 @@ Linhas de Cuidado do Espaco Viver Bem (EVB):
   clinico, excesso de linguagem tecnica/clinica ou generalizacoes alarmistas. Nao comunicar
   doenca como ameaca — comunicar acesso, acolhimento, prevencao, acompanhamento e qualidade de vida.
 
+## Identidade Visual (Manual de Marca oficial — MS.139 v1)
+
+- **Logotipo:** wordmark "Unimed" + símbolo do pinheiro/seta, cantos arredondados,
+  estética digital. Existem 4 variações de composição (com/sem símbolo, com/sem
+  box) x 4 níveis de nomenclatura (institucional, 1, 2 ou 3 linhas) = 16 versões
+  oficiais. Símbolo nunca deve ser redesenhado ou distorcido.
+- **Cor primária:** Pantone 348C — CMYK 100,0,85,10 — RGB 0,153,93 — HEX **#00995d**.
+  Verde deve ser sempre o protagonista da aplicação.
+- **Branco:** #ffffff (contraste sobre fundo verde/escuro).
+- **Cores de apoio:** manual traz swatches de fundo (verde-lima/cítrico, verde
+  institucional, verde escuro, creme, azul claro, rosa, terracota) mas **sem
+  códigos HEX/CMYK explícitos** nas páginas recebidas — usar apenas como
+  referência de contraste até termos os códigos exatos. Regra fixa: **nunca
+  aplicar o logo diretamente sobre fundo laranja** (laranja "rouba" o
+  protagonismo do verde).
+- **Versão monocromática:** permitida em preto ou branco quando houver restrição
+  de cor (ex.: impressão 1 cor).
+- **Tipografia:** família "Unimed Sans" (peso SemiBold usado no nome/subtítulo
+  do logotipo). Manual não especifica aqui a fonte de texto corrido — assumir
+  a mesma família institucional até confirmação.
+- **Aplicação sobre fotos/texturas:** sempre reservar área branca adjacente
+  para o logotipo (não aplicar direto sobre a imagem).
+- **Box do logo:** 3 cantos arredondados + 1 canto reto (inferior direito).
+- **Pendências:** arquivo vetorial do logo (AI/EPS/SVG/PNG) para produção real
+  ainda não foi enviado — o manual em PDF só ensina como usar, não substitui
+  o arquivo da marca. Códigos das cores de apoio (lima, terracota etc.) também
+  pendentes de confirmação.
+- Fonte: `refs/marca/Manual_Marca_Unimed.pdf` (dentro da campanha ativa).
+
 ## Canais
 
 - **Canal principal:** Materiais impressos e digitais para ativacao presencial em empresas
