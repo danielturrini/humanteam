@@ -66,6 +66,14 @@ aqui o que aprender sobre o seu negocio, seu tom e suas preferencias.
   `scripts/generate-linhas-cuidado.js` (padrao data-driven para multiplicar
   1 sistema validado em N variacoes — trocar so os dados, nunca o layout).
 
+## Notion
+- Página raiz "Projetos" criada em 2026-09-02 (draft privado, workspace do
+  usuário): https://app.notion.com/p/3cf2022822e181328b1dd259bd530273 —
+  reusar esta página em runs futuras, não criar outra "Projetos".
+- Página do projeto Espaço Viver Bem x BD:
+  https://app.notion.com/p/3cf2022822e181c2b618dca15a108882 — atualizar in
+  loco a cada nova sincronização desta campanha.
+
 ## Tecnico
 - `scripts/render-project-document.js` pode falhar com "Executable doesn't
   exist" se o playwright do `npm install` esperar uma revisao de Chromium
