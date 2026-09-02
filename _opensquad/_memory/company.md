@@ -49,12 +49,33 @@ Linhas de Cuidado do Espaco Viver Bem (EVB):
 
 ## Essência e Linguagem da Marca (Manual de Linguagem — MS.138 v1)
 
+- **Crenças:** a vida é o bem maior do ser humano; a vida boa deve ser
+  possível para todos; saúde é condição essencial para uma vida boa; a vida só
+  acontece na cooperação, na natureza e em sociedade.
 - **Propósito (nacional):** "Aqui tem Unimed" — promover saúde e qualidade de
   vida nas cidades onde atua, por meio do cooperativismo médico e do
   conhecimento em saúde, para que o maior número de pessoas viva mais e melhor.
 - **Princípios:** atratividade para médicos, pessoas, sustentabilidade,
   conhecimento, visão sistêmica, inovação, agilidade.
 - **Valores:** integridade, respeito, solidariedade, espírito cooperativista.
+- **Posicionamento:** a Unimed é o maior sistema cooperativista de saúde do
+  mundo, com mais de 50 anos de história, liderado por médicos vocacionados
+  presentes em cada cooperativa — reúne o melhor conhecimento e competência de
+  gestão de saúde para cuidar e influenciar a qualidade de vida de clientes e
+  da comunidade onde atua.
+- **Atributos desejados** (usar como filtro de tom em qualquer peça):
+  - *Vocacionada para o cuidado* — sistema cooperativista liderado por médicos,
+    com vínculo local e conhecimento da realidade de cada cidade.
+  - *Autoridade em saúde* — acesso a serviços e conhecimento médico, gestão de
+    saúde do maior sistema cooperativo do setor.
+  - *Parte da comunidade* — liderança local, parceria lado a lado com as
+    comunidades, vínculo genuíno com o território.
+  - *Descomplicada* — processos e comunicação mais ágeis, simples e
+    integrados, com foco no cliente.
+  - *Segurança e confiança* — governança sistêmica, atendimento garantido em
+    todos os territórios.
+  - *Sustentabilidade* — modelo cooperativo, geração e distribuição de
+    resultados, contribuição com a sociedade.
 - **Conceito geral de criação:** "Presença que transforma o cuidado com a
   saúde e a vida." Toda comunicação de campanha deve poder se conectar a essa
   plataforma nacional, não apenas ao conceito local da peça.
