@@ -12,6 +12,16 @@ const lancDir = path.join(outDir, 'lancamento');
 fs.mkdirSync(guiaDir, { recursive: true });
 fs.mkdirSync(lancDir, { recursive: true });
 
+const LOGO_PATH = path.join(__dirname, '..', 'Campanhas', 'espaco-viver-bem-bd', 'refs', 'marca', 'Logo_Unimed_Juiz_de_Fora_branco.png');
+const LOGO_WHITE_DATAURI = fs.existsSync(LOGO_PATH)
+  ? `data:image/png;base64,${fs.readFileSync(LOGO_PATH).toString('base64')}`
+  : null;
+function logoImg(heightPx) {
+  return LOGO_WHITE_DATAURI
+    ? `<img src="${LOGO_WHITE_DATAURI}" alt="Unimed Juiz de Fora" style="height:${heightPx}px">`
+    : `<span style="font-weight:800">Unimed Juiz de Fora</span>`;
+}
+
 const PANEL_W = 585;
 const PANEL_H = 1240;
 
@@ -25,17 +35,14 @@ const BASE_CSS = `
 function capaHtml() {
   return `<!doctype html><html><head><meta charset="utf-8"><style>${BASE_CSS}
   body{background:#00995d;color:#fff;padding:60px 34px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-  .logo{display:flex;flex-direction:column;align-items:center;gap:6px;margin-bottom:50px}
-  .logo svg{width:44px;height:44px}
-  .logo .nome{font-weight:800;font-size:26px}
-  .logo .sub{font-size:13px;font-weight:600;opacity:.9}
+  .logo{display:flex;flex-direction:column;align-items:center;margin-bottom:50px}
   .tag{font-size:20px;font-weight:800;color:#A9CF3D;margin-bottom:18px}
   .titulo{font-size:30px;font-weight:800;line-height:1.2}
   .sub2{font-size:15px;font-weight:500;margin-top:20px;opacity:.95;line-height:1.4}
   .selo{margin-top:34px;background:#fff;color:#00995d;font-weight:800;font-size:14px;padding:10px 20px;border-radius:30px}
   </style></head><body>
   ${BADGE}
-  <div class="logo"><svg viewBox="0 0 24 24"><path d="M12 2 L18 12 L14 12 L18 20 L12 16 L6 20 L10 12 L6 12 Z" fill="#fff"/></svg><span class="nome">Unimed</span><span class="sub">Juiz de Fora</span></div>
+  <div class="logo">${logoImg(70)}</div>
   <div class="tag">Tudo isso já é seu.</div>
   <div class="titulo">Espaço Viver Bem (EVB)</div>
   <div class="sub2">Linhas de cuidado para sua saúde e de seus dependentes</div>
@@ -92,16 +99,14 @@ function lancamentoHtml() {
   body{width:1240px;height:1754px;background:#00995d;font-family:Arial,Helvetica,sans-serif;color:#fff;position:relative;overflow:hidden}
   .badge{position:absolute;top:70px;right:80px;font-size:14px;letter-spacing:2px;opacity:.55;font-weight:700}
   .pad{padding:90px 80px}
-  .logo{display:flex;align-items:center;gap:14px;font-weight:800;font-size:34px}
-  .logo svg{width:38px;height:38px}
-  .logo .sub{font-size:16px;font-weight:600;opacity:.9;margin-left:6px}
+  .logo{display:flex;align-items:center}
   .headline{font-size:70px;font-weight:800;line-height:1.1;margin-top:110px;max-width:1000px}
   .corpo{font-size:30px;font-weight:400;line-height:1.5;margin-top:44px;max-width:900px;opacity:.95}
   .cta-block{margin-top:110px;background:#A9CF3D;color:#123425;border-radius:24px;padding:44px 48px;max-width:820px;font-size:30px;font-weight:800}
   </style></head><body>
   ${BADGE}
   <div class="pad">
-    <div class="logo"><svg viewBox="0 0 24 24"><path d="M12 2 L18 12 L14 12 L18 20 L12 16 L6 20 L10 12 L6 12 Z" fill="#fff"/></svg>Unimed <span class="sub">Juiz de Fora</span></div>
+    <div class="logo">${logoImg(56)}</div>
     <div class="headline">Um novo espaço, para um cuidado que você já tinha.</div>
     <div class="corpo">A partir de agora, o Espaço Saúde da Unimed Juiz de Fora tem presença quinzenal aqui na sua empresa. Venha descobrir as Linhas de Cuidado que já fazem parte do seu plano — para você e seus dependentes.</div>
     <div class="cta-block">Converse com a nossa assistente no Espaço Saúde.</div>

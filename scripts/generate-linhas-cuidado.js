@@ -16,6 +16,14 @@ const cartoesDir = path.join(outDir, 'cartoes');
 const digitalDir = path.join(outDir, 'digital');
 for (const d of [displaysDir, cartoesDir, digitalDir]) fs.mkdirSync(d, { recursive: true });
 
+const LOGO_PATH = path.join(__dirname, '..', 'Campanhas', 'espaco-viver-bem-bd', 'refs', 'marca', 'Logo_Unimed_Juiz_de_Fora_branco.png');
+const LOGO_WHITE_DATAURI = fs.existsSync(LOGO_PATH)
+  ? `data:image/png;base64,${fs.readFileSync(LOGO_PATH).toString('base64')}`
+  : null;
+const LOGO_IMG = LOGO_WHITE_DATAURI
+  ? `<img src="${LOGO_WHITE_DATAURI}" alt="Unimed Juiz de Fora" style="height:32px">`
+  : `<span style="display:flex;align-items:center;gap:12px"><svg viewBox="0 0 24 24" style="width:32px;height:32px"><path d="M12 2 L18 12 L14 12 L18 20 L12 16 L6 20 L10 12 L6 12 Z" fill="#fff"/></svg>Unimed <span style="font-size:14px;font-weight:600;opacity:.9;margin-left:4px">Juiz de Fora</span></span>`;
+
 const ICONS = {
   domiciliar: '<path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10"/>',
   tabagismo: '<rect x="3" y="10" width="14" height="4" rx="1"/><path d="M17 11h2v2h-2z"/><path d="M4 6l16 16" stroke-width="2.6"/>',
@@ -173,9 +181,7 @@ function displayHtml(l) {
   *{box-sizing:border-box;margin:0;padding:0}
   body{width:1240px;height:1754px;background:#00995d;font-family:Arial,Helvetica,sans-serif;color:#fff;position:relative;overflow:hidden}
   .pad{padding:80px 80px 0}
-  .logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:28px}
-  .logo svg{width:32px;height:32px}
-  .logo .sub{font-size:14px;font-weight:600;opacity:.9;margin-left:4px}
+  .logo{display:flex;align-items:center}
   .icon{width:64px;height:64px;stroke:#fff;fill:none;stroke-width:3;margin-top:56px}
   .headline{font-size:54px;font-weight:800;line-height:1.1;margin-top:26px;max-width:960px}
   .intro{font-size:22px;font-weight:600;margin-top:30px;max-width:920px;opacity:.95}
@@ -190,7 +196,7 @@ function displayHtml(l) {
   </style></head><body>
   ${BADGE}
   <div class="pad">
-    <div class="logo"><svg viewBox="0 0 24 24"><path d="M12 2 L18 12 L14 12 L18 20 L12 16 L6 20 L10 12 L6 12 Z" fill="#fff"/></svg>Unimed <span class="sub">Juiz de Fora</span></div>
+    <div class="logo">${LOGO_IMG}</div>
     <svg class="icon" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">${ICONS[l.icon]}</svg>
     <div class="headline">${l.headline}</div>
     <div class="intro">Cliente Unimed, você tem acesso aos serviços do Espaço Viver Bem (EVB). Sem custo extra para o titular e o dependente!</div>
