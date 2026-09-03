@@ -74,6 +74,18 @@ aqui o que aprender sobre o seu negocio, seu tom e suas preferencias.
   https://app.notion.com/p/3cf2022822e181c2b618dca15a108882 — atualizar in
   loco a cada nova sincronização desta campanha.
 
+## Upload em massa para Google Drive — nao usar create_file com base64 para muitos arquivos
+- `mcp__Google_Drive__create_file` exige o conteudo em base64 embutido na
+  chamada. Para ler esse conteudo de volta a um arquivo grande e preciso
+  passar pelo Read, que trunca em ~25000 tokens — nao da pra reconstruir um
+  base64 grande de forma confiavel (risco real de corromper o arquivo).
+- Regra pratica: para 1-3 arquivos pequenos (<50KB), ok fazer via
+  create_file. Para volume (dezenas de arquivos, ou qualquer imagem gerada
+  em resolucao de impressao/tela), usar `SendUserFile` em vez disso — envia
+  direto do filesystem local, sem precisar embutir conteudo na conversa.
+  Se o usuario quiser tudo no Drive, oriente a arrastar do chat pra la (leva
+  segundos pra ele, é caro pra nos replicar arquivo por arquivo pela API).
+
 ## Tecnico
 - `scripts/render-project-document.js` pode falhar com "Executable doesn't
   exist" se o playwright do `npm install` esperar uma revisao de Chromium

@@ -40,6 +40,14 @@ Ao final de cada execucao do `/team`, registre uma linha nesta tabela.
   referências de KV em arquivo, HEX de apoio (lima/verde escuro)
   confirmados, telefone de contato, URL oficial do EVB, data de lançamento
   (D0), canal digital interno (Teams/e-mail) confirmado.
+- **Atualização 2026-09-03**: usuário enviou o logotipo oficial (EPS) e 11
+  referências de KV (via Drive). Logo convertido (Ghostscript) e aplicado
+  nas 58 peças; refs de KV registradas no Art Bible como direção de
+  composição/lettering. KV segue bloqueado apenas por falta de motor de
+  imagem (Higgsfield/Magnific), não mais por falta de material. Upload em
+  massa para Google Drive via `create_file`/base64 se mostrou inviável
+  (Read trunca arquivos base64 grandes, risco de corromper o arquivo) — a
+  entrega de volume (58 peças) foi feita via `SendUserFile` em lugar disso.
 - **Correção de infraestrutura**: `scripts/render-project-document.js`
   quebrava neste ambiente porque o playwright resolvido pelo `npm install`
   esperava uma revisão de Chromium mais nova do que a pré-instalada — corrigido
